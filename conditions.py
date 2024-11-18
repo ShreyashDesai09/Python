@@ -1,20 +1,19 @@
-print("mon\ntue\nwed\nthur\nfri\nsat\nsun")
+num1 = int(input("Enter Number 1:"))
+num2 = int(input("Enter Number 2:"))
 
-day = input("ENTER DAY :")
+choice = input("Enter The Options: + - * /:")
 
-if day == "mon":  
-    print("It's",day)
-elif day == "tue":  
-    print("It's",day)
-elif day == "wed":  
-    print("It's",day)
-elif day == "thur":  
-    print("It's",day)
-elif day == "fri":  
-    print("It's",day)
-elif day == "sat":  
-    print("It's",day)
-elif day == "sun":  
-    print("It's",day)
+if choice == "+":
+    ans = num1 + num2
+    print("Addition:",ans)
+elif choice == "-":
+    ans = num1 - num2
+    print("Sub:",ans)
+elif choice == "*":
+    ans = num1 * num2
+    print("Multiplication:",ans)
+elif choice == "/":
+    ans = num1 / num2
+    print("Division:",ans)
 else:
-    print("ERROR")
+    print("Wrong Choice")
