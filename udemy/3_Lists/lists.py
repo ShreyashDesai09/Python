@@ -37,3 +37,6 @@
 # del spam [delete]
 # print(spam)
 
+a = ["1","2","3","4"]
+for i in range(len(a)):
+    print(str(i) + a[i])
