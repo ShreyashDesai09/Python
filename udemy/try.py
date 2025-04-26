@@ -48,30 +48,32 @@
 #     print("------------")
 
 
-dashes = 0
-a = [1,1,2,2,3,3,2,3,4,6,9,10]
-print(f"ENTERED NUMBERS ARE :- {a}")
-for i in a:
-    key = i
-    count = -1
-    j = i + 1
-    for j in a:
-        if key == j:
-            count = count + 1
-            a.remove(i)
-        if count > -1:
-            print(a)
-            dashes = dashes + count
+# dashes = 0
+# a = [1,1,2,2,3,3,2,3,4,6,9,10]
+# print(f"ENTERED NUMBERS ARE :- {a}")
+# for i in a:
+#     key = i
+#     count = -1
+#     j = i + 1
+#     for j in a:
+#         if key == j:
+#             count = count + 1
+#             a.remove(i)
+#         if count > -1:
+#             print(a)
+#             dashes = dashes + count
     
-print(len(a))
+# print(len(a))
 
-for i in a:
-    if dashes >= 0:
-        a.append(0)
-        dashes = dashes -1
+# for i in a:
+#     if dashes >= 0:
+#         a.append(0)
+#         dashes = dashes -1
 
 
-print(f"{a}")
+# print(f"{a}")
+
+
 
 # a = [1,2,3,3,2]
 # b = []
@@ -92,3 +94,5 @@ print(f"{a}")
 # print(b)
 # print(d)
 # print(count)
+
+
