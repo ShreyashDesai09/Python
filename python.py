@@ -1,3 +1,15 @@
-arr = [1,2,3,4,5]
+def is_palindrome(ref):
+    ref = ref.lower().replace(" ", "")  # optional: make lowercase and remove spaces
+    i = 0
+    j = len(ref) - 1
 
-for i in arr:
+    while i < j:
+        if ref[i] != ref[j]:
+            return False
+        i += 1
+        j -= 1
+    return True
+
+# Example usage
+A = "racecar"
+print(is_palindrome(A))  # Output: True
