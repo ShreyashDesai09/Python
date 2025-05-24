@@ -1,24 +1,13 @@
-def transpose(matrix):
-    rows = len(matrix)
-    cols = len(matrix[0])
-    
-    # Create a new matrix with dimensions cols x rows
-    result = []
-    for j in range(cols):
-        new_row = []
-        for i in range(rows):
-            new_row.append(matrix[i][j])
-        result.append(new_row)
-    
-    return result
+A = [-1,3,-4,2,5,7,-11,10]
 
-# Example usage
-matrix = [
-    [10, 20],
-    [30, 40],
-    [50, 60]
-]
+def insertion_sort(arr):
+    n = len(arr)
+    for i in range(1,n):
+        for j in range(i , 0 ,-1):
+            if arr[j-1] > arr[j]:
+                arr[j-1] , arr[j] = arr[j] , arr[j-1]
+            else:
+                break
 
-transposed = transpose(matrix)
-for row in transposed:
-    print(row)
+insertion_sort(A)
+print(A)
