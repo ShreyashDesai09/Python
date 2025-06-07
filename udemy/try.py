@@ -96,3 +96,12 @@
 # print(count)
 
 
+for i in range(1,7):
+    for j in range (1 , i):
+        space = j - 7
+        for s in space:
+            print(f"{j} \t", end= " ")        
+    print()
+    
+
+    
